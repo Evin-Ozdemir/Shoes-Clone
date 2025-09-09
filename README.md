@@ -3,6 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/React-19-blue?logo=react" alt="React Badge"/>
   <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" alt="TypeScript Badge"/>
+  <img src="https://img.shields.io/badge/TanStack_Query-5-orange?logo=tanstack" alt="TanStack Query Badge"/>
   <img src="https://img.shields.io/badge/Node.js-18-green?logo=node.js" alt="Node.js Badge"/>
   <img src="https://img.shields.io/badge/Express.js-4-lightgrey?logo=express" alt="Express Badge"/>
   <img src="https://img.shields.io/badge/MongoDB-Database-brightgreen?logo=mongodb" alt="MongoDB Badge"/>
@@ -10,9 +11,9 @@
   <img src="https://img.shields.io/badge/Vite-7-646CFF?logo=vite" alt="Vite Badge"/>
 </p>
 
-A modern **e-commerce shoes application** with **React + TypeScript (frontend)** and **Node.js + Express + MongoDB (backend)**.  
+A modern **e-commerce shoes application** with **React + TypeScript + TanStack Query (frontend)** and **Node.js + Express + MongoDB (backend)**.  
 Users can browse shoes, view details, make reservations, while **admins** can manage products via an **Admin Panel**.  
-Fully responsive for desktop & mobile.  
+Fully responsive for desktop & mobile.
 
 ---
 
