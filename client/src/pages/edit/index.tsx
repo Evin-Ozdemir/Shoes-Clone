@@ -1,0 +1,29 @@
+import type { FC } from "react";
+import Form from "../../components/form";
+import type { ShoeFormValues } from "../../types";
+import useShoes from "../../hooks/useShoes";
+import { useParams } from "react-router-dom";
+import Loader from "../../components/loader";
+
+const Edit: FC = () => {
+  const { id } = useParams();
+  const { shoe, update } = useShoes();
+  const { isLoading, data } = shoe(id as string);
+
+  const onSubmit = (value: ShoeFormValues) => {
+    update().mutate({ id: id as string, data: value });
+  };
+
+  if (isLoading || !data) return <Loader />;
+  return (
+    <div className="max-w-[1000px] mx-auto">
+      <h1 className="text-2xl md:text-3xl font-semibold mb-5">
+        Ürünü Düzenle{" "}
+      </h1>
+
+      <Form data={data} onSubmit={onSubmit} />
+    </div>
+  );
+};
+
+export default Edit;

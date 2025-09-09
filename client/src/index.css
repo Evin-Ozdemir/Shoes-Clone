@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import "react-toastify/dist/ReactToastify.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@theme {
+  --font-rubik: "Rubik", sans-serif;
+  --font-open: "Open Sans", sans-serif;
+  --color-my-blue: #4a69e2;
+  --color-my-yellow: #ffa52f;
+  --color-white: #ffffff;
+  --color-white-fa: #fafafa;
+  --color-grey: #e7e7e3;
+  --color-grey-main: #70706e;
+  --color-grey-dark: #232321;
+}
+
+body {
+  background-color: var(--color-grey);
+  color: var(--color-grey-dark);
+  font-family: var(--font-rubik);
+}
+
+@layer base {
+  body {
+    @apply py-[32px] px-[16px]  md:px-[32px] lg:px-[48px] xl:px-[60px];
+  }
+}
+
+@layer components {
+  .header-button {
+    @apply px-6 py-2 hover:bg-grey transition cursor-pointer whitespace-nowrap w-full;
+  }
+}
